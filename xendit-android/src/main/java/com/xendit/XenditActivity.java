@@ -30,7 +30,7 @@ public class XenditActivity extends Activity {
         Intent intent = new Intent(context, XenditActivity.class);
         intent.setClass(context, XenditActivity.class);
         intent.setAction(XenditActivity.class.getName());
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra(AUTHENTICATION_KEY, authentication);
         return intent;
     }
