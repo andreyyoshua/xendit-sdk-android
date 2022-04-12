@@ -28,9 +28,6 @@ public class XenditActivity extends Activity {
 
     public static Intent getLaunchIntent(Context context, HasAuthenticationUrl authentication) {
         Intent intent = new Intent(context, XenditActivity.class);
-        intent.setClass(context, XenditActivity.class);
-        intent.setAction(XenditActivity.class.getName());
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra(AUTHENTICATION_KEY, authentication);
         return intent;
     }
